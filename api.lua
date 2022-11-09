@@ -3,7 +3,7 @@ local getGameThumbnail = function(gameId, wh)
 end
 
 local loadScript = function(game)
-	return string.format('', game)
+	loadstring(game:HttpGet(string.format('https://raw.githubusercontent.com/altacountbabi/ZerusV2/main/games/%s.lua', game)))()
 end
 
 return {
